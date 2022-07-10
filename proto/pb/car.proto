@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option go_package = "github.com/ssouthcity/go-grpc-first-look/proto/pb";
+
+import "google/protobuf/empty.proto";
+
+package pb;
+
+message Car {
+    string Brand = 1;
+    string Model = 2;
+}
+
+service CarService {
+    rpc GetCar(google.protobuf.Empty) returns (Car) {}
+}

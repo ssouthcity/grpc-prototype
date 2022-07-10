@@ -1,0 +1,5 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/ssouth/src/go-grpc-first-look'
+protoc --go_out=. --go_opt=module=github.com/ssouthcity/go-grpc-first-look --go-grpc_out=. --go-grpc_opt=module=github.com/ssouthcity/go-grpc-first-look grpc/*.proto
+make: Leaving directory '/home/ssouth/src/go-grpc-first-look'
+ 
